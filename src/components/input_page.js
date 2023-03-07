@@ -38,7 +38,7 @@ export const InputPage = () => {
                 data: details
             }
             console.log(res)
-            await axios.post('http://192.168.1.75:8000/form-submit', res)
+            await axios.post('https://api-crop-backend.onrender.com/form-submit', res)
             .then((response) => {
                 console.log("input page results");
                 console.log(response.data.result)

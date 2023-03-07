@@ -32,7 +32,7 @@ export const FirstPage = () => {
             // setdata1(response.data.nodes)
             // console.log(data1)
 
-            await axios.post('http://192.168.1.75:8000/first-page', values)
+            await axios.post('https://api-crop-backend.onrender.com/first-page', values)
             .then((response) => {
                 console.log(response.data)
                 const temp = response.data;
